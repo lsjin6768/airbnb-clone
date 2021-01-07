@@ -7,9 +7,9 @@ from . import models
 
 @admin.register(models.User)
 class CustomUserAdmin(UserAdmin):
-    pass
 
     """Custom User Admin"""
+
     fieldsets = UserAdmin.fieldsets + (
         (
             "custom Profile",
